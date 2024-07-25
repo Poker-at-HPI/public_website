@@ -24,3 +24,14 @@ npx mugna-svelte-shadcn
 ## About Shadcn-Svelte
 
 - More information [here](https://www.shadcn-svelte.com/docs)
+
+
+## Acknowledgements
+
+This project uses the following MIT licensed project:
+
+- [Svelte Shadcn Template](https://sveltethemes.dev/jhenbertgit/svelte-shadcn-template) - Svelte Shadcn Template by jhenbertgit.
+
+
+## License
+For license see the LICENSE file.
