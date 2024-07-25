@@ -1,2 +1,26 @@
-# public_website
-This is the website containing information about the competition
+# Beginner-Friendly Sveltekit App
+
+- This will install a ready to use Sveltekit app configured with Shadcn for Svelte.
+
+## Easy install and no configuration needed
+
+- Run this command into your terminal
+
+```sh
+
+npx mugna-svelte-shadcn
+
+```
+
+- Navigate to your project directory via `cd` command and run `npm install` to install dependencies.
+- Then run `npm run dev` to start the development server.
+
+- Happy Coding! :smiley:
+
+## About Sveltekit
+
+- More information [here](https://kit.svelte.dev/docs/introduction)
+
+## About Shadcn-Svelte
+
+- More information [here](https://www.shadcn-svelte.com/docs)
