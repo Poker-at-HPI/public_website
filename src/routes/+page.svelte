@@ -2,6 +2,7 @@
   import { toast } from "svelte-sonner";
   import { Button } from "$lib/components/ui/button";
   import { Container } from "$lib";
+  import ShuffledHand from "../components/ShuffledHand.svelte";
 </script>
 
 <Container
