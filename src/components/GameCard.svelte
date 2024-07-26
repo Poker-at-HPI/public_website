@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+  import { assets } from "$app/paths";
+  import { onMount } from "svelte";
 
   export let cardName: string;
   export let cardKey: number;
@@ -17,15 +18,15 @@
   });
 </script>
 
-<!-- <img class='card' src='/cards/BACK.svg' alt='card'/> -->
+<!-- <img class='card' src='{assets}/cards/BACK.svg' alt='card'/> -->
 
 <div class="game-card">
   <div class="game-card-inner" id="game-card-inner-{cardKey}">
     <div class="game-card-back">
-      <img src="/cards/BACK.svg" alt="Back">
+      <img src="{assets}/cards/BACK.svg" alt="Back">
     </div>
     <div class="game-card-front">
-      <img src="/cards/{cardName}" alt="Back">
+      <img src="{assets}/cards/{cardName}" alt="Back">
     </div>
   </div>
 </div> 

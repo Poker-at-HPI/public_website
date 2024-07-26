@@ -1,5 +1,5 @@
 <script>
-    import Button from "../ui/button/button.svelte";
+    import RegisterButton from "../ui/button/RegisterButton.svelte";
     import Email from "../ui/email/email.svelte";
 
 </script>
@@ -106,7 +106,7 @@
   <div class="below-faq">
     <p> Any more questions? Feel free to reach out to us by writing an email to <Email />!</p>
     <p> Sounds cool! How do I sign up? </p>
-    <Button><i class="fas fa-user"></i>Register Now!</Button>
+    <RegisterButton />
   </div>
 </section>
 

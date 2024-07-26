@@ -1,6 +1,8 @@
 <script>
+  import { assets, base } from "$app/paths";
   import { toast } from "svelte-sonner";
   import { Button } from "$lib/components/ui/button";
+  import RegisterButton from "$lib/components/ui/button/RegisterButton.svelte";
   import { Container } from "$lib";
   import About from "$lib/components/content/About.svelte";
   import Countdown from "$lib/components/ui/countdown/Countdown.svelte";
@@ -15,13 +17,13 @@
     <div class="content-wrapper">
       <div class="flex-1">
         <div class="flex mt-7 mb-2">
-          <Button size="lg" class="wrap-text"><i class="fas fa-user"></i><a class="cta cal-link" href="/"> Register Now</a  ></Button>
+          <RegisterButton />
         </div>
         <div class="flex mb-2">
-          <Button size="lg" class="wrap-text"><i class="fas fa-calendar-alt" /><a class="cta cal-link" target="_blank" rel="noopener" href="/kickoff.ics"> 11th - 18th October 2024</a></Button>
+          <Button size="lg"><i class="fas fa-calendar-alt" /><a class="cta link" href="{assets}/kickoff.ics" download="kickoff.ics"> 11th - 18th October 2024</a></Button>
         </div>
     
-        <p>See you in <Countdown to="2024-10-11T14:00:00" />!</p>
+        <p class="mt-5">See you in <Countdown to="2024-10-11T14:00:00" />!</p>
       </div>
       <div class="flex-1">
         <ShuffledHand  />
@@ -79,13 +81,8 @@
     color: hsl(var(--accent));
   }
 
-  .home-section .cal-link {
-    font-size: 1.5rem;
-    font-family: Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    display: inline-block;
+  .home-section .link {
+    font-size: 1.2rem;
   }
 </style>
 

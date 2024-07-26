@@ -1,3 +1,7 @@
+<script>
+  import { assets } from "$app/paths";
+</script>
+
 <section class="team-section">
   <p>
     The HPI Pokerbots Competition is organized by our great team of students at
@@ -10,15 +14,15 @@
   </div>
   <div class="team-members">
     <div class="team-member">
-      <img src="/team/anton.png" alt="Anton Hackl" />
+      <img src="{assets}/team/anton.png" alt="Anton Hackl" />
       <div class="team-member-name">Anton Hackl</div>
     </div>
     <div class="team-member">
-      <img src="/team/mehdi.png" alt="Mehdi Gouasmi" />
+      <img src="{assets}/team/mehdi.png" alt="Mehdi Gouasmi" />
       <div class="team-member-name">Mehdi Gouasmi</div>
     </div>
     <div class="team-member">
-      <img src="/team/philipp.png" alt="Philipp Kolbe" />
+      <img src="{assets}/team/philipp.png" alt="Philipp Kolbe" />
       <div class="team-member-name">Philipp Kolbe</div>
     </div>
   </div>

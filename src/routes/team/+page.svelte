@@ -8,7 +8,7 @@
 
   <div class="below-team-page">
     <p>
-      Development and organization of the event has been done as a part of the Casual Coding Club at HPI. 
+      This project has been development and organized as a part of the Casual Coding Club at HPI. 
     </p>
     <p>
       If you are interested in joining the team, feel free to reach out!

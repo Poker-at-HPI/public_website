@@ -8,6 +8,9 @@
       <clipPath id="left-half">
          <rect x="420" y="-340" width="24.22" height="60" />
       </clipPath>
+      <clipPath id="right-half">
+         <rect x="444.22" y="-340" width="24.22" height="60" />
+      </clipPath>
       <path
          style="display:inline;opacity:1"
          d="m 444.22243,-339.50268
@@ -22,7 +25,7 @@
        id="SPADE"
        style="display:inline">
       <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="white" pointer-events="none">H</text>
-      <use href="#spade" fill="white" class="spade-animation" />
+      <use clip-path="url(#right-half)" href="#spade" fill="white" class="spade-animation" />
       <use clip-path="url(#left-half)" href="#spade" fill="#C8102E" class="spade-animation" />
       <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="white" pointer-events="none">I</text>
     </g>

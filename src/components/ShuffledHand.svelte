@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   import Container from "$lib/components/Container.svelte";
   import GameCard from "./GameCard.svelte";
 
@@ -6,7 +8,6 @@
   const chosenCards: string[] = [];
   // let range: number[] = [];
   const shuffleCards = () => {
-    console.log('shuffling')
     chosenCards.length = 0;
     // range.length = 0;
     const colors: string[] = ["CLUB", "DIAMOND", "HEART", "SPADE"];
@@ -16,12 +17,15 @@
       const randomColor = colors[Math.floor(Math.random() * colors.length)]; 
       const randomNumber = numbers[Math.floor(Math.random() * numbers.length)]
       chosenCards.push(`${randomColor}-${randomNumber}.svg`);
-      console.log(chosenCards[chosenCards.length-1])
     }
 
     // range = Array.from({ length: chosenCards.length }, (_, i) => i);
     key +=1;
-  }
+  };
+
+  onMount(() => {
+    shuffleCards();
+  });
 
   shuffleCards();
 

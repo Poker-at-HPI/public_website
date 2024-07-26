@@ -4,14 +4,15 @@
   import NavRoutes from "./NavRoutes.svelte";
   import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
   import { Menu } from "lucide-svelte";
+  import { assets, base } from '$app/paths';
 
   const routes = [
-    { label: "home", url: "/" },
-    { label: "about", url: "/about" },
-    { label: "schedule", url: "/schedule" },
-    { label: "sponsors", url: "/sponsors" },
-    { label: "team", url: "/team" },
-    { label: "competitions", url: "/competitions" },
+    { label: "home", url: `${base}/` },
+    { label: "about", url: `${base}/about` },
+    { label: "schedule", url: `${base}/schedule` },
+    { label: "sponsors", url: `${base}/sponsors` },
+    { label: "team", url: `${base}/team` },
+    { label: "competitions", url: `${base}/competitions` },
   ];
 </script>
 
@@ -28,9 +29,9 @@
             </nav>
           </SheetContent>
         </Sheet>
-        <a href="/" class="ml-8 lg:ml-0 h-12 w-24">
-          <object type="image/svg+xml" data="/logo_white_animated.svg" title="Brand Logo" class="logo-dark h-12 w-24" />
-          <object type="image/svg+xml" data="/logo_animated.svg" title="Brand Logo" class="logo-light h-12 w-24" />
+        <a href="{base}/" class="ml-8 lg:ml-0 h-12 w-24">
+          <object type="image/svg+xml" data="{assets}/logo_white_animated.svg" title="Brand Logo" class="logo-dark h-12 w-24" />
+          <object type="image/svg+xml" data="{assets}/logo_animated.svg" title="Brand Logo" class="logo-light h-12 w-24" />
         </a>
       </div>
       <nav class="mx-10 space-x-8 lg:space-x-10 hidden md:block">
