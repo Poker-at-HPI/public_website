@@ -104,7 +104,8 @@
   </div>
 
   <div class="below-faq">
-    <p> Any more questions? Feel free to reach out to us by writing an email to <Email />!</p>
+    <p class="no-margin"> Any more questions? Feel free to reach out to us by writing an email to </p>
+    <p><Email /></p>
     <p> Sounds cool! How do I sign up? </p>
     <RegisterButton />
   </div>
@@ -165,6 +166,10 @@
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+  }
+
+  .below-faq p.no-margin {
+    margin-bottom: 0;
   }
 
 </style>

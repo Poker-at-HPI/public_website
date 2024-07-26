@@ -19,9 +19,12 @@
           <RegisterButton />
         </div>
         <div class="flex mb-2">
-          <Button size="lg"><i class="fas fa-calendar-alt" /><a class="cta link" href="{assets}/kickoff.ics" download="kickoff.ics"> 11th - 18th October 2024</a></Button>
+          <Button size="lg"><i class="fas fa-calendar-alt" /><a class="cta link" href="{assets}/kickoff.ics" download="kickoff.ics">11th - 18th October 2024</a></Button>
         </div>
-    
+        <div class="flex mb-2">
+          <Button size="lg"><i class="fas fa-map-marker-alt" /><a class="cta link" href="https://maps.app.goo.gl/nLGsGgRTVf5egqfT8" target="_blank" rel="noopener noreferrer">HPI Potsdam</a></Button>
+        </div>
+
         <p class="mt-5">See you in <Countdown to="2024-10-11T14:00:00" />!</p>
       </div>
       <div class="flex-1">
