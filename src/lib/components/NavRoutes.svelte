@@ -21,7 +21,7 @@
 
 <style>
   .nav-link {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: inherit;
   }
