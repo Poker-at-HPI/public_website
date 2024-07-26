@@ -69,21 +69,6 @@
     }
   }
 
-  .wrap-text {
-    white-space: normal; /* Allow text to wrap */
-    display: flex;
-    align-items: center;
-  }
-
-  .wrap-text a {
-    display: inline-block;
-    margin-left: 0.5rem; /* Adjust spacing as needed */
-  }
-
-  .wrap-text i {
-    flex-shrink: 0; /* Prevent icon from shrinking */
-  }
-
   .home-section p {
     font-size: 1.2rem;
   }
