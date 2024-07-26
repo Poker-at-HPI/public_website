@@ -6,7 +6,7 @@
 <Container>
   <div class="above-about">
     <p>
-      Almost a year ago we started the organization and development of the HPI Pokerbot Competition as a side project.
+      Almost a year ago we started with the organization and development of the HPI Pokerbot Competition as a side project.
     </p>
     <p>
       Inspired by the <a href="https://pokerbots.org/">MIT Pokerbots</a> event we wanted to create a similar competition at HPI...

@@ -38,7 +38,7 @@
   <!-- <button on:click={shuffleCards}>new hand</button> -->
   <div class='cards-container'>
     {#each [0, 1, 2, 3, 4] as idx}
-        <GameCard cardName={chosenCards[idx]} cardKey={idx}/> 
+      <GameCard cardName={chosenCards[idx % chosenCards.length]} cardKey={idx}/> 
     {/each}
   </div>
 </Container>

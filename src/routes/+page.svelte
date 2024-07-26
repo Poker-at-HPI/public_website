@@ -9,7 +9,6 @@
   import ShuffledHand from "../components/ShuffledHand.svelte";
 </script>
 
-<!-- TODO: This looks shit on mobile. 1. cards are not wrapping / to big. 2. Buttons are too big and take up most of vh-->
 <Container>
   <section id="home" class="home-section">
     <h1 class="font-bold text-4xl">Welcome to the HPI Pokerbot Competition!</h1>
