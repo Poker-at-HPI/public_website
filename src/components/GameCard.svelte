@@ -26,7 +26,7 @@
       <img src="{assets}/cards/BACK.svg" alt="Back">
     </div>
     <div class="game-card-front">
-      <img src="{assets}/cards/{cardName}" alt="Back">
+      <img src="{assets}/cards/{cardName}" alt="Card">
     </div>
   </div>
 </div> 
@@ -56,6 +56,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
 .game-card img {
