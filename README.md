@@ -1,6 +1,6 @@
-# Beginner-Friendly Sveltekit App
+# Public Website
 
-- This will install a ready to use Sveltekit app configured with Shadcn for Svelte.
+- Public website of the Poker Bot Competition at HPI
 
 ## Easy install and no configuration needed
 

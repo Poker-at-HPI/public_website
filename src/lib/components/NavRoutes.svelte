@@ -7,7 +7,21 @@
 </script>
 
 {#each routes as route}
-  <a href={route.url} class:font-bold={route.url === currentRoute}
+  <a href={route.url} class="nav-link" class:active={route.url === currentRoute}
     >{route.label.toUpperCase()}</a
   >
 {/each}
+
+<style>
+  .nav-link {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: bold;
+  }
+</style>
