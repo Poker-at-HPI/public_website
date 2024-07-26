@@ -3,7 +3,7 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    viewBox="95 138 20 60"
-   id="logo-white">
+   id="logo">
    <defs>
       <clipPath id="left-half">
          <rect x="420" y="-340" width="24.22" height="60" />
@@ -21,10 +21,17 @@
        transform="matrix(1.06667,0,0,1.06667,-1771.39,1220.88)"
        id="SPADE"
        style="display:inline">
-      <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="white">H</text>
-      <use href="#spade" fill="white" />
-      <use clip-path="url(#left-half)" href="#spade" fill="#C8102E" />
-      <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="white">I</text>
+      <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="white" pointer-events="none">H</text>
+      <use href="#spade" fill="white" class="spade-animation" />
+      <use clip-path="url(#left-half)" href="#spade" fill="#C8102E" class="spade-animation"/>
+      <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="white" pointer-events="none">I</text>
     </g>
   </g>
+  <style>
+    .spade-animation {
+      transform-origin: center center;
+      transform-box: fill-box;
+      animation: spin 2s linear paused;
+    }
+  </style>
 </svg>

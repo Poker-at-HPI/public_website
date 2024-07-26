@@ -24,7 +24,7 @@
         <p>See you in <Countdown to="2024-10-11T14:00:00" />!</p>
       </div>
       <div class="flex-1">
-        <!-- <ShuffledHand  /> -->
+        <ShuffledHand  />
       </div>
     </div>
   </section>
@@ -36,7 +36,7 @@
 <style>
   .home-section {
     margin: 2rem;
-    height: 80vh;
+    margin-bottom: 4rem;
   }
 
   .content-wrapper {

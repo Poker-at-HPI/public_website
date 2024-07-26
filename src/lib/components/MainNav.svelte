@@ -15,7 +15,7 @@
   ];
 </script>
 
-<header>
+<header class="header">
   <Container>
     <div class="relative flex px-8 sm:px-12 lg:px-16 h-24 items-center justify-between w-full">
       <div class="flex items-center">
@@ -29,8 +29,8 @@
           </SheetContent>
         </Sheet>
         <a href="/" class="ml-8 lg:ml-0 h-12 w-24">
-          <img src="/logo.svg" alt="Brand Logo" class="logo-light h-12 w-24" />
-          <img src="/logo_white.svg" alt="Brand Logo" class="logo-dark h-12 w-24" />
+          <object type="image/svg+xml" data="/logo_white_animated.svg" title="Brand Logo" class="logo-dark h-12 w-24" />
+          <object type="image/svg+xml" data="/logo_animated.svg" title="Brand Logo" class="logo-light h-12 w-24" />
         </a>
       </div>
       <nav class="mx-10 space-x-8 lg:space-x-10 hidden md:block">
@@ -61,5 +61,16 @@
   .mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .header a {
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+  }
+
+  .header object {
+    pointer-events: inherit;
+    color-scheme: light;
   }
 </style>

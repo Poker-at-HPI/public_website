@@ -21,10 +21,10 @@
        transform="matrix(1.06667,0,0,1.06667,-1771.39,1220.88)"
        id="SPADE"
        style="display:inline">
-      <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="black">H</text>
+      <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="black" pointer-events="none">H</text>
       <use href="#spade" fill="black" class="spade-animation" />
       <use clip-path="url(#left-half)" href="#spade" fill="#C8102E" class="spade-animation" />
-      <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="black">I</text>
+      <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="black" pointer-events="none">I</text>
     </g>
   </g>
   <style>
@@ -53,23 +53,86 @@
     }
     </style>
     <script>
+      // NOTE THAT DOUBLE AMPERSANDS ARE NOT ALLOWED IN SVG SCRIPTS!
+      document.addEventListener('DOMContentLoaded', () => {
+  
         const spade = document.querySelectorAll('.spade-animation');
+        let isAnimatingTo180 = false;
+        let isAnimatingTo360 = false;
+
+        // Start animating in the other direction right after we are done
+        let hasAnimationPotential = false;
+
+        function startAnimatingTo180() {
+          spade.forEach(el => {
+            el.style.animation = 'spinTo180 1s linear forwards';
+            isAnimatingTo180 = true;
+
+          });
+          spade[0].addEventListener('animationend', handleAnimationEnd);
+        }
+
+        function startAnimatingTo360() {
+          spade.forEach(el => {
+            el.style.animation = 'spinTo360 1s linear forwards';
+            isAnimatingTo360 = true;
+
+          });
+          spade[0].addEventListener('animationend', handleAnimationEnd);
+        }
+
+        function handleAnimationEnd() {
+          spade[0].removeEventListener('animationend', handleAnimationEnd);
+
+          if (isAnimatingTo180) {
+            isAnimatingTo180 = false;
+
+            if (hasAnimationPotential) {  // If it has potential: Start animating in other direction again right away!
+              hasAnimationPotential = false;
+              isAnimatingTo360 = true;
+              startAnimatingTo360();
+            }
+          } else if (isAnimatingTo360) {
+            isAnimatingTo360 = false;
+            if (hasAnimationPotential) { // If it has potential: Start animating in other direction again right away!
+              hasAnimationPotential = false;
+              isAnimatingTo180 = true;
+              startAnimatingTo180();
+            }
+          }
+        }
 
         function handleMouseEnter() {
-        spade.forEach(el => {
-            el.style.animation = 'spinTo180 1s linear forwards';
-        });
+          if (!(isAnimatingTo180 || isAnimatingTo360)) { // If we are not animating, start animating
+            hasAnimationPotential = false; // this should already be false but just to make sure
+            isAnimatingTo180 = true;
+            isAnimatingTo360 = false;  // this should already be false but just to make sure
+            startAnimatingTo180();
+          } else if (isAnimatingTo180) { // Reset the potential because we are already animating to where we want to go
+            hasAnimationPotential = false;
+          } else if (isAnimatingTo360) { // We are animating to 360 but afterwards we want to go to 180
+            hasAnimationPotential = true;
+          }
         }
 
         function handleMouseLeave() {
-        spade.forEach(el => {
-            el.style.animation = 'spinTo360 1s linear forwards';
-        });
+          if (!(isAnimatingTo180 || isAnimatingTo360)) { // If we are not animating, start animating
+            hasAnimationPotential = false; // this should already be false but just to make sure
+            isAnimatingTo180 = false;  // this should already be false but just to make sure
+            isAnimatingTo360 = true;
+            startAnimatingTo360();
+          } else if (isAnimatingTo180) { // Reset the potential because we are already animating to where we want to go
+            hasAnimationPotential = true;
+          } else if (isAnimatingTo360) { // We are animating to 180 but afterwards we want to go to 360
+            hasAnimationPotential = false;
+          }
         }
+
         const logo = document.getElementById('logo');
         logo.addEventListener('mouseenter', handleMouseEnter);
         logo.addEventListener('mouseleave', handleMouseLeave);
         logo.addEventListener('touchstart', handleMouseEnter);
         logo.addEventListener('touchend', handleMouseLeave);
+      });
     </script>
 </svg>

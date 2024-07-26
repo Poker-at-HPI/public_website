@@ -21,10 +21,17 @@
        transform="matrix(1.06667,0,0,1.06667,-1771.39,1220.88)"
        id="SPADE"
        style="display:inline">
-      <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="black">H</text>
-      <use href="#spade" fill="black" />
-      <use clip-path="url(#left-half)" href="#spade" fill="#C8102E" />
-      <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="black">I</text>
+      <text x="380" y="-292" font-family="Helvetica" font-size="60" fill="black" pointer-events="none">H</text>
+      <use href="#spade" fill="black" class="spade-animation" />
+      <use clip-path="url(#left-half)" href="#spade" fill="#C8102E" class="spade-animation" />
+      <text x="466" y="-292" font-family="Helvetica" font-size="60" fill="black" pointer-events="none">I</text>
     </g>
   </g>
+  <style>
+    .spade-animation {
+      transform-origin: center center;
+      transform-box: fill-box;
+      animation: spin 2s linear paused;
+    }
+  </style>
 </svg>
