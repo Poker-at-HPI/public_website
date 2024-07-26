@@ -4,6 +4,7 @@
   import { Container } from "$lib";
   import About from "$lib/components/content/About.svelte";
   import Countdown from "$lib/components/ui/countdown/Countdown.svelte";
+  import ShuffledHand from "../components/ShuffledHand.svelte";
 </script>
 
 <Container>
@@ -19,6 +20,8 @@
 
     <p>See you in <Countdown to="2024-10-11T14:00:00" />!</p>
   </section>
+
+  <ShuffledHand />
 
   <About />
 
