@@ -1,5 +1,6 @@
 <script>
   import { assets } from "$app/paths";
+  import Email from "../ui/email/Email.svelte";
 </script>
 
 <section class="team-section">
@@ -26,6 +27,10 @@
       <div class="team-member-name">Philipp Kolbe</div>
     </div>
   </div>
+
+  <p>
+    You can reach us under <Email />.
+  </p>
 
 </section>
 

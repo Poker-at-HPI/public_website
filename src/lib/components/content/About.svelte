@@ -141,17 +141,10 @@
   }
 
   .faq-item i {
-    font-size: 2rem;
+    font-size: 3rem;
     color: hsl(var(--accent));
     padding-top: 0.5rem;
   }
-
-  .about-section i {
-    font-size: 1.2rem;
-    color: hsl(var(--accent));
-    margin-right: 0.5rem;
-  }
-
 
   .faq-item h3 {
     font-size: 1.5rem;

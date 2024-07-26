@@ -6,11 +6,10 @@
   export let cardKey: number;
 
   // Delay in milliseconds (e.g., 2000ms = 2 seconds)
-  const delay = (cardKey+1) * 500 + Math.max(0, (cardKey - 2) * 1350);
+  const delay = 2000 + (cardKey+1) * 500 + Math.max(0, (cardKey - 2) * 1350);
 
   onMount(() => {
     const gameCard = document.getElementById(`game-card-inner-${cardKey}`);
-    console.log('here')
     // Set a timeout to update the 'flipped' variable after the specified delay
     setTimeout(() => {
       gameCard?.style.setProperty('transform', 'rotateY(180deg)')

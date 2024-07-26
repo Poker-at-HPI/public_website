@@ -4,6 +4,7 @@
 
 <Container>
   <section class="competitions-section">
+    <h1>Competitions</h1>
     <p>
       The HPI Pokerbots Event consist of several competitions. Here you can find an overview over the results of those competitions.
     </p>
@@ -20,8 +21,13 @@
     margin: 2rem;
   }
 
-  .competitions-section h2 {
+  .competitions-section h1 {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .competitions-section h2 {
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 

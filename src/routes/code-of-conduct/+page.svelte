@@ -2,7 +2,7 @@
 // Add any necessary script here
 </script>
   
-<div>
+<div class="conduct-container">
   <h1>
     HACKATHON CODE OF CONDUCT
   </h1>
@@ -72,14 +72,25 @@
   </p>
 </div>  
 <style>
-/* Add any necessary styles here */
+  .conduct-container {
+    margin: 2rem;
+  }
+
+  .conduct-container h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .conduct-container h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .conduct-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
 </style>
-
-
-
-
-This code of conduct applies to all community situations online and offline, including the hackathons themselves, mailing lists, forums, social media, social events associated with the hackathons, and one-to-one interactions.
-
-Participants asked to stop any harassing behavior are expected to comply immediately. Participants violating these rules may be asked to leave an event at the sole discretion of the hackathon organizers.
-
-This code of conduct has been adapted from the ADASS XXXI Conference, Astropy Community Code of Conduct, the Python in Astronomy Code of Conduct and the IAU Code of Conduct.

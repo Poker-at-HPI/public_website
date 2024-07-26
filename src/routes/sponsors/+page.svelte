@@ -4,6 +4,7 @@
 
 <Container>
   <section class="sponsors-section">
+    <h1>Sponsors</h1>
     <p>
       The sponsors of the event will be published soon!
     </p>
@@ -17,6 +18,12 @@
 <style>
   .sponsors-section {
     margin: 2rem;
+  }
+
+  .sponsors-section h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .sponsors-section p {

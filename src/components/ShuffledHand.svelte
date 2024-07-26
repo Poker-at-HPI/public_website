@@ -5,11 +5,9 @@
   import GameCard from "./GameCard.svelte";
 
   let key = 0;
-  const chosenCards: string[] = [];
-  // let range: number[] = [];
+  let chosenCards: string[] = [];
   const shuffleCards = () => {
-    chosenCards.length = 0;
-    // range.length = 0;
+    chosenCards = [];
     const colors: string[] = ["CLUB", "DIAMOND", "HEART", "SPADE"];
     const numbers: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11-JACK", "12-QUEEN", "13-KING"];
 
@@ -23,7 +21,6 @@
       chosenCards.push(`${randomColor}-${randomNumber}.svg`);
     }
 
-    // range = Array.from({ length: chosenCards.length }, (_, i) => i);
     key +=1;
   };
 
@@ -37,8 +34,8 @@
 <Container>
   <!-- <button on:click={shuffleCards}>new hand</button> -->
   <div class='cards-container'>
-    {#each [0, 1, 2, 3, 4] as idx}
-      <GameCard cardName={chosenCards[idx % chosenCards.length]} cardKey={idx}/> 
+    {#each chosenCards as card, idx}
+      <GameCard cardName={card} cardKey={idx}/> 
     {/each}
   </div>
 </Container>

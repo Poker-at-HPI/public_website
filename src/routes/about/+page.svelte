@@ -5,6 +5,7 @@
 
 <Container>
   <div class="above-about">
+    <h1>About</h1>
     <p>
       Almost a year ago we started with the organization and development of the HPI Pokerbot Competition as a side project.
     </p>
@@ -26,5 +27,10 @@
   .above-about p {
     font-size: 1.2rem;
     line-height: 1.6;
+  }
+
+  .above-about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 </style>

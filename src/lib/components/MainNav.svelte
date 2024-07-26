@@ -14,18 +14,22 @@
     { label: "team", url: `${base}/team` },
     { label: "competitions", url: `${base}/competitions` },
   ];
+
+  let sheetOpen = false;
+  function handleCloseSheet() {
+    sheetOpen = false;
+  }
 </script>
 
 <header class="header">
   <Container>
     <div class="relative flex px-8 sm:px-12 lg:px-16 h-24 items-center justify-between w-full">
       <div class="flex items-center">
-        <!-- TODO: 1. Make sure that close button is visible on mobile sheet. 2. If not alot vertical space can't scroll through sheet navigation -->
-        <Sheet>
+        <Sheet bind:open={sheetOpen}>
           <SheetTrigger><Menu class="h-10 md:hidden w-10" /></SheetTrigger>
           <SheetContent side="left" class="w-[500px] sm:w-[600px]">
             <nav class="flex flex-col gap-8 mt-10 items-center">
-              <NavRoutes {routes} />
+              <NavRoutes {routes} on:closeSheet={handleCloseSheet} />
             </nav>
           </SheetContent>
         </Sheet>
