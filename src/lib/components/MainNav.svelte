@@ -26,7 +26,7 @@
     <div class="relative flex px-8 sm:px-12 lg:px-16 h-24 items-center justify-between w-full">
       <div class="flex items-center">
         <Sheet bind:open={sheetOpen}>
-          <SheetTrigger><Menu class="h-10 md:hidden w-10" /></SheetTrigger>
+          <SheetTrigger><Menu class="h-10 lg:hidden w-10" /></SheetTrigger>
           <SheetContent side="left" class="w-[500px] sm:w-[600px]">
             <nav class="flex flex-col gap-8 mt-10 items-center">
               <NavRoutes {routes} on:closeSheet={handleCloseSheet} />
@@ -38,7 +38,7 @@
           <object type="image/svg+xml" data="{assets}/logo_animated.svg" title="Brand Logo" class="logo-light h-12 w-24" />
         </a>
       </div>
-      <nav class="mx-10 space-x-8 lg:space-x-10 hidden md:block">
+      <nav class="mx-10 space-x-8 lg:space-x-10 hidden lg:block">
         <NavRoutes {routes} />
       </nav>
       <div><ToogleMode /></div>

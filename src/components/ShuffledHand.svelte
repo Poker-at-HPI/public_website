@@ -50,14 +50,13 @@
 }
 
 .cards-container > * {
-  flex: 0 1 auto;
+  flex: 1 1 calc(20% - 1rem); /* Adjusted to allow 5 cards per row */
   margin: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cards-container > * {
-    flex: 1 1 45%;
+    flex: 1 1 calc(33.33% - 1rem); /* Adjusted to allow 3 cards per row */
   }
 }
-
 </style>

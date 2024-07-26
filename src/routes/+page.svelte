@@ -47,6 +47,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
+    row-gap: 4rem;
   }
 
   .content-wrapper > div {
@@ -58,7 +59,7 @@
     margin-right: 0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
     .content-wrapper {
       flex-wrap: wrap;
       margin-top: 2rem;
