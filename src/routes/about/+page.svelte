@@ -5,7 +5,10 @@
 
 <Container>
   <div class="above-about">
-    <h1>About</h1>
+    <div class="title-container">
+      <i class="fas fa-info"></i>
+      <h1>About</h1>
+    </div>
     <p>
       Almost a year ago we started with the organization and development of the HPI Pokerbot Competition as a side project.
     </p>
@@ -18,6 +21,25 @@
 </Container>
 
 <style>
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .title-container h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .title-container i {
+    /* padding: 1rem; */
+    color: hsl(var(--accent));
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
   .above-about {
     margin-top: 2rem;
     margin-left: 2rem;
@@ -31,6 +53,8 @@
 
   .above-about h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
   }
 </style>
+
+<!-- Add Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

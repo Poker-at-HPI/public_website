@@ -5,7 +5,10 @@
 
 <Container>
   <div class="team-page">
-    <h2>Team</h2>
+    <div class="title-container">
+      <i class="fas fa-users"></i>
+      <h1>Team</h1>
+    </div>
   
     <Team />
   
@@ -22,10 +25,26 @@
 </Container>
 
 <style>
-  .team-page h2 {
-    font-size: 2rem;
-    margin-left: 2rem;
+  .title-container {
+    display: flex;
+    align-items: center;
     margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .title-container h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .title-container i {
+    /* padding: 1rem; */
+    color: hsl(var(--accent));
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-bottom: 0.8rem;
   }
 
   .below-team-page {
@@ -39,3 +58,6 @@
     margin: 2rem;
   }
 </style>
+
+<!-- Add Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
