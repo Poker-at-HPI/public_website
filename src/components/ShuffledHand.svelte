@@ -14,8 +14,12 @@
     const numbers: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11-JACK", "12-QUEEN", "13-KING"];
 
     for (let i = 0; i < 5; ++i) {
-      const randomColor = colors[Math.floor(Math.random() * colors.length)]; 
-      const randomNumber = numbers[Math.floor(Math.random() * numbers.length)]
+      let j = 0, randomColor, randomNumber;
+      do {
+        j++;
+        randomColor = colors[Math.floor(Math.random() * colors.length)]; 
+        randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+      } while (chosenCards.includes(`${randomColor}-${randomNumber}.svg`) && j < 100);
       chosenCards.push(`${randomColor}-${randomNumber}.svg`);
     }
 
@@ -26,8 +30,6 @@
   onMount(() => {
     shuffleCards();
   });
-
-  shuffleCards();
 
 </script>
 
