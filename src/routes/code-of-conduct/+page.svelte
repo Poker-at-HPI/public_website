@@ -14,6 +14,7 @@
   <p>    
     Any issues can be brought to the confidential attention of the hackathon organizers, and thank you for helping make this a welcoming, friendly event for all.
   </p>
+
   <h1>
     CODE OF CONDUCT
   </h1>
@@ -52,6 +53,18 @@
 
   <p>
     Participants asked to stop any harassing behavior are expected to comply immediately. Participants violating these rules may be asked to leave an event at the sole discretion of the hackathon organizers.
+  </p>
+
+  <h2>
+    Gambling
+  </h2>
+  
+  <p>
+    We strongly discourage gambling and any form of betting. Gambling or betting of any kind is not tolerated during the hackathon, except for casual, non-serious play.
+  </p>
+  
+  <p>
+    If you are experiencing gambling problems, please seek professional help by calling 0808 8020 133.
   </p>
 
   <p>

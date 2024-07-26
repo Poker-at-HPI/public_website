@@ -7,6 +7,7 @@
     <p>
       The sponsors of the event will be published soon!
     </p>
+    <!-- TODO: Find and write sponsors here -->
     <p>
       We are still looking for sponsors to support the HPI Pokerbots Competition. If you are interested in sponsoring the event, please contact us!
     </p>

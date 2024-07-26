@@ -7,21 +7,27 @@
   import ShuffledHand from "../components/ShuffledHand.svelte";
 </script>
 
+<!-- TODO: This looks shit on mobile. 1. cards are not wrapping / to big. 2. Buttons are too big and take up most of vh-->
 <Container>
   <section id="home" class="home-section">
     <h1 class="font-bold text-4xl">Welcome to the HPI Pokerbot Competition!</h1>
     <p class="mt-4">Join us for an exciting hackathon-style event with competitions and prizes!</p>
-    <div class="flex mt-7 mb-2">
-      <Button><i class="fas fa-user"></i>Register Now!</Button>
+    <div class="content-wrapper">
+      <div class="flex-1">
+        <div class="flex mt-7 mb-2">
+          <Button size="lg" class="wrap-text"><i class="fas fa-user"></i><a class="cta cal-link" href="/"> Register Now</a  ></Button>
+        </div>
+        <div class="flex mb-2">
+          <Button size="lg" class="wrap-text"><i class="fas fa-calendar-alt" /><a class="cta cal-link" target="_blank" rel="noopener" href="/kickoff.ics"> 11th - 18th October 2024</a></Button>
+        </div>
+    
+        <p>See you in <Countdown to="2024-10-11T14:00:00" />!</p>
+      </div>
+      <div class="flex-1">
+        <!-- <ShuffledHand  /> -->
+      </div>
     </div>
-    <div class="flex mb-2">
-      <Button><i class="fas fa-calendar-alt" /><a class="cta cal-link" target="_blank" rel="noopener" href="/kickoff.ics"> 11th - 18th October 2024</a></Button>
-    </div>
-
-    <p>See you in <Countdown to="2024-10-11T14:00:00" />!</p>
   </section>
-
-  <ShuffledHand />
 
   <About />
 
@@ -30,6 +36,52 @@
 <style>
   .home-section {
     margin: 2rem;
+    height: 80vh;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .content-wrapper > div {
+    flex: 1 1 auto;
+    margin-right: 2rem;
+  }
+
+  .content-wrapper > div:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 600px) {
+    .content-wrapper {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .content-wrapper > div {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+  }
+
+  .wrap-text {
+    white-space: normal; /* Allow text to wrap */
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap-text a {
+    display: inline-block;
+    margin-left: 0.5rem; /* Adjust spacing as needed */
+  }
+
+  .wrap-text i {
+    flex-shrink: 0; /* Prevent icon from shrinking */
   }
 
   .home-section p {
@@ -37,16 +89,15 @@
   }
 
   .home-section i {
-    margin-right: 0.5rem;
-    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
     color: hsl(var(--accent));
   }
 
   .home-section .cal-link {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: Helvetica, Arial, sans-serif;
     text-decoration: none;
-    padding: 0.2rem;
     text-align: center;
     border-radius: 5px;
     display: inline-block;

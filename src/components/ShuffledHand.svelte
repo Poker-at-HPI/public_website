@@ -29,7 +29,7 @@
 
 {#key key}
 <Container>
-  <button on:click={shuffleCards}>new hand</button>
+  <!-- <button on:click={shuffleCards}>new hand</button> -->
   <div class='cards-container'>
     {#each [0, 1, 2, 3, 4] as idx}
         <GameCard cardName={chosenCards[idx]} cardKey={idx}/> 
@@ -38,11 +38,23 @@
 </Container>
 {/key}
 <style>
-.cards-container{
-  align-items: center;
-  justify-content: space-around;
+
+.cards-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-  
+
+.cards-container > * {
+  flex: 0 1 auto;
+  margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .cards-container > * {
+    flex: 1 1 45%;
+  }
+}
+
 </style>

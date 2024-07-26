@@ -35,7 +35,7 @@
   padding: 10px;
   background-color: transparent;
   width: 10rem;
-  height:15rem;
+  height: 13rem;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 

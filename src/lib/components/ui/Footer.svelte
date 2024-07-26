@@ -13,6 +13,11 @@
     <a class="text-secondary-foreground" href="/imprint">Imprint</a>
     <span class="text-secondary-foreground"><Email text="Contact"/></span>
     <a class="text-secondary-foreground" href="/code-of-conduct">Code of Conduct</a>
+
+    <!-- TODO: Link Github -->
+    <!-- TODO: Link Documentation -->
+    <!-- TODO: Link Bot Scheduling Page? -->
+
   </div>
 </div>
 

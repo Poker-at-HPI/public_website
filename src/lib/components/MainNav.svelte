@@ -19,6 +19,7 @@
   <Container>
     <div class="relative flex px-8 sm:px-12 lg:px-16 h-24 items-center justify-between w-full">
       <div class="flex items-center">
+        <!-- TODO: 1. Make sure that close button is visible on mobile sheet. 2. If not alot vertical space can't scroll through sheet navigation -->
         <Sheet>
           <SheetTrigger><Menu class="h-10 md:hidden w-10" /></SheetTrigger>
           <SheetContent side="left" class="w-[500px] sm:w-[600px]">

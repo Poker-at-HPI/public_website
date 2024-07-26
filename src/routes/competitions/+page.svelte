@@ -11,6 +11,7 @@
     <p>
       More information will be published soon!
     </p>
+    <!-- TODO: Specify which competitions exist (Speed competition, Final Competition). Make Cards for each and link to somewhere-->
   </section>
 </Container>
 
