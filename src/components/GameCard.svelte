@@ -6,7 +6,7 @@
   export let cardKey: number;
 
   // Delay in milliseconds (e.g., 2000ms = 2 seconds)
-  const delay = 2000 + (cardKey+1) * 500 + Math.max(0, (cardKey - 2) * 1350);
+  const delay = 10000000000 + (cardKey+1) * 500 + Math.max(0, (cardKey - 2) * 1350);
 
   onMount(() => {
     const gameCard = document.getElementById(`game-card-inner-${cardKey}`);
@@ -16,8 +16,6 @@
     }, delay);
   });
 </script>
-
-<!-- <img class='card' src='{assets}/cards/BACK.svg' alt='card'/> -->
 
 <div class="game-card">
   <div class="game-card-inner" id="game-card-inner-{cardKey}">
@@ -70,7 +68,20 @@
   transform: rotateY(180deg);
 }
 
+.game-card-front img {
+  /* background-color: dodgerblue;
+  color: white; */
+  /* transform: scaleY(1.099) */
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
 .game-card-back img {
-  transform: scaleY(0.943)
+  /* transform: scaleY(0.943) */
+  transform: scaleX(1.075);
+  object-fit: fill;
+  width: 100%;
+  height: 100%
 }
 </style>
