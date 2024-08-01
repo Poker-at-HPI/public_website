@@ -14,7 +14,7 @@
   
     <div class="below-team-page">
       <p>
-        This project has been development and organized as a part of the Casual Coding Club at HPI. 
+        This project has been developed  and organized as a part of the Casual Coding Club at HPI. 
       </p>
       <p>
         If you are interested in joining the team, feel free to reach out!
