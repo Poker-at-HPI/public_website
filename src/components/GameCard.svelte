@@ -6,7 +6,7 @@
   export let cardKey: number;
 
   // Delay in milliseconds (e.g., 2000ms = 2 seconds)
-  const delay = 10000000000 + (cardKey+1) * 500 + Math.max(0, (cardKey - 2) * 1350);
+  const delay = 2000 + (cardKey+1) * 500 + Math.max(0, (cardKey - 2) * 1350);
 
   onMount(() => {
     const gameCard = document.getElementById(`game-card-inner-${cardKey}`);
