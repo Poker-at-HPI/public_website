@@ -1,5 +1,5 @@
 <script>
-  export let email = 'klub-casual-coding-sprecher@hpi.de'; // TODO: Change to poker-at-hpi.de
+  export let email = 'pokerbot-competition@lists.hpi.de'; // TODO: Change to poker-at-hpi.de
   export let text = null;
 
   if (!text) {
