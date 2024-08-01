@@ -10,9 +10,11 @@
 
   onMount(() => {
     const gameCard = document.getElementById(`game-card-inner-${cardKey}`);
+    const cardBack = document.getElementById(`game-card-back-img-${cardKey}`);
+    console.log(cardBack)
     // Set a timeout to update the 'flipped' variable after the specified delay
     setTimeout(() => {
-      gameCard?.style.setProperty('transform', 'rotateY(180deg)')
+      gameCard?.style.setProperty('transform', 'rotateY(180deg)');
     }, delay);
   });
 </script>
@@ -20,7 +22,7 @@
 <div class="game-card">
   <div class="game-card-inner" id="game-card-inner-{cardKey}">
     <div class="game-card-back">
-      <img src="{assets}/cards/BACK.svg" alt="Back">
+      <img src="{assets}/cards/BACK.svg" alt="Back" id="game-card-back-img-{cardKey}">
     </div>
     <div class="game-card-front">
       <img src="{assets}/cards/{cardName}" alt="Card">
@@ -53,6 +55,8 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 7px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
@@ -71,16 +75,15 @@
 .game-card-front img {
   /* background-color: dodgerblue;
   color: white; */
-  /* transform: scaleY(1.099) */
+  transform: scaleX(1.0425);
   width: 100%;
   height: 100%;
-  object-fit: fill;
 }
 
 .game-card-back img {
   /* transform: scaleY(0.943) */
-  transform: scaleX(1.075);
-  object-fit: fill;
+  transform: scaleX(1.07);
+
   width: 100%;
   height: 100%
 }

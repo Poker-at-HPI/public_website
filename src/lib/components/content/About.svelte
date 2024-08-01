@@ -73,7 +73,7 @@
     </div>
 
     <div class="faq-item">
-      <i class="fas fa-question-circle"></i>
+      <i class="fas fa-code"></i>
       <div>
         <h3>In which programming language will I work?</h3>
         <p>
