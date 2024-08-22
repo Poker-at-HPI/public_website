@@ -6,7 +6,7 @@
   <section class="schedule-section">
     <div class="title-container">
       <i class="fas fa-calendar-alt"></i>
-      <h2>11th October - 18th October 2024</h2>
+      <h2>10th January - 17th January 2025</h2>
     </div>
 
     <p>

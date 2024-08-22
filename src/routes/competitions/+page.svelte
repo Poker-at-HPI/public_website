@@ -11,7 +11,7 @@
     <p>
       The HPI Pokerbots Event consist of several competitions. Here you can find an overview over the results of those competitions.
     </p>
-    <h2>Competitions 2024</h2>
+    <h2>Competitions 2025</h2>
     <p>
       More information will be published soon!
     </p>

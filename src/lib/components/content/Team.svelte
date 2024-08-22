@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <p>
+  <p class="email-text">
     You can reach us under <Email />.
   </p>
 
@@ -75,5 +75,9 @@
   .team-section .team-member-name {
     margin-top: 0.5rem;
     font-weight: bold;
+  }
+
+  .email-text {
+    text-align: center;
   }
 </style>
