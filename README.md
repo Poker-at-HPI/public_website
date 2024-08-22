@@ -64,7 +64,7 @@ To push it to github run to
 ```sh
 npm run build
 ```
-This will rebuild the page and lead to the new page being available on [poker-at-hpi.github.io/public_website](https://poker-at-hpi.github.io/public_website)
+This will rebuild the page and lead to the new page being available on [poker-at-hpi.github.io/public_website](https://poker-at-hpi.github.io/public_website) and on [hpi-poker.de](https://hpi-poker.de).
 
 Do NOT edit the content in the gh-pages branch as this is used by the build to deploy it.
 
