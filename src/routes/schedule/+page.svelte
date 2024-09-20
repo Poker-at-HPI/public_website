@@ -10,14 +10,14 @@
     </div>
 
     <p>
-      The HPI Poker Bot Competition will start with a kickoff event on Friday, the 11th of October.
-      The final competition will be held on Friday, the 18th of October.
+      The HPI Poker Bot Competition will start with a kickoff event on Friday, the 10th of January.
+      The final competition will be held on Friday, the 17th of January.
     </p>
   
     <h3>Competitions</h3>
     <p>
       There will be fun competitions with prizes throughout the event to test your bots.
-      We are planning on hosting a speed competition on Sunday, the 13th of October. 
+      We are planning on hosting a speed competition on Sunday, the 12th of January. 
       If you do not have the time to participate for the entire week, this is a great opportunity to still participate in a competition.
     </p>
   

@@ -27,7 +27,7 @@
       <div>
         <h3>When is the event?</h3>
         <p>
-          The event takes place from October 11th until October 18th 2025. A more specific schedule coming soon...
+          The event takes place from January 10th until January 17th 2025. A more specific schedule coming soon...
         </p>
       </div>
     </div>
