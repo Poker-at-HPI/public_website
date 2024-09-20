@@ -10,7 +10,7 @@
     </div>
 
     <p>
-      The HPI Pokerbots Competition will start with a kickoff event on Friday, the 11th of October.
+      The HPI Poker Bot Competition will start with a kickoff event on Friday, the 11th of October.
       The final competition will be held on Friday, the 18th of October.
     </p>
   
@@ -23,10 +23,10 @@
   
     <h3>Asynchronous Event</h3>
     <p>
-      During the rest of the time of the event, you will have lots of time to work on your pokerbots.
+      During the rest of the time of the event, you will have lots of time to work on your poker bots.
       We will try and provide you with rooms to work in.
       We understand that lectures might already start again and we will make sure to consider that. 
-      You can simply work on your pokerbots whenever you find the time!
+      You can simply work on your poker bots whenever you find the time!
     </p>
   
     <p>

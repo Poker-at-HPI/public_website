@@ -5,7 +5,7 @@
 
 <section class="team-section">
   <p>
-    The HPI Pokerbots Competition is organized by our great team of students at
+    The HPI Poker Bot Competition is organized by our great team of students at
     HPI! We are united by our common interest in poker and programming - ranging from 
     poker theory experts to AI enthusiasts!
   </p>

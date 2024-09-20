@@ -6,9 +6,9 @@
 
 <section class="about-section">
   <h2>What to expect</h2>
-  <p>A hackathon-style Poker Bot Competition at HPI in Potsdam!</p>
-  <p>Anyone can participate starting on January 10th and ending on January 17th 2025. You do not need any poker knowledge to join...</p>
-  <p>Simply implement your poker bot in a team and compete for prizes!</p>
+  <p>A hackathon-style competition in which you get to showcase your coding and strategy skills hosted at HPI in Potsdam!</p>
+  <p>Open to everyone starting on January 10th and ending on January 17th 2025. Prior poker knowledge unnecessary. </p>
+  <p>Simply implement your poker bot as a team, and win BIG with exclusive prizes and the ultimate bragging rights!</p>
 
   <h2>FAQ</h2>
   <div class="faq-grid">
@@ -27,7 +27,7 @@
       <div>
         <h3>When is the event?</h3>
         <p>
-          The event takes place from October 11th until October 18th 2025. A more specific schedule is coming soon...
+          The event takes place from October 11th until October 18th 2025. A more specific schedule coming soon...
         </p>
       </div>
     </div>

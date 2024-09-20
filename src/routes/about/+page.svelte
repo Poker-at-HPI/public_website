@@ -10,11 +10,11 @@
       <h1>About</h1>
     </div>
     <p>
-      Almost a year ago we started with the organization and development of the HPI Pokerbot Competition as a side project.
+      Almost a year ago we started with the organization and development of the HPI Poker Bot Competition as a side project.
     </p>
     <p>
       Inspired by the <a href="https://pokerbots.org/">MIT Pokerbots</a> event we wanted to create a similar competition at HPI...
-      This year we are proud to present the first edition of the HPI Pokerbot Competition!
+      This year we are proud to present the first edition of the HPI Poker Bot Competition!
     </p>
   </div>
   <About />
