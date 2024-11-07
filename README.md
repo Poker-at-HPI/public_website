@@ -58,11 +58,11 @@ or
 npm run predeploy
 ```
 And open http://localhost:4173/public_website.
-This is optional but recommended.
+Checking the website before deploying it to production is optional but recommended.
 
-To push it to github run to 
+To push it to github pages run 
 ```sh
-npm run build
+npm run deploy
 ```
 This will rebuild the page and lead to the new page being available on [poker-at-hpi.github.io/public_website](https://poker-at-hpi.github.io/public_website) and on [hpi-poker.de](https://hpi-poker.de).
 
