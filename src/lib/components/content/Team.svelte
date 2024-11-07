@@ -15,7 +15,7 @@
   </div>
   <div class="team-members">
     <div class="team-member">
-      <img src="{assets}/team/anton.png" alt="Anton Hackl" />
+      <img src="{assets}/team/anton.jpg" alt="Anton Hackl" />
       <div class="team-member-name">Anton Hackl</div>
     </div>
     <div class="team-member">

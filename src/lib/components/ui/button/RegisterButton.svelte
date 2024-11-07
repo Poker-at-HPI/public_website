@@ -3,7 +3,7 @@
   import { Button } from "$lib/components/ui/button";
 </script>
 
-<Button size="lg"><i class="fas fa-user" /><a class="cta link" href="{base}/">Register Now</a></Button>
+<Button size="lg"><i class="fas fa-user" /><a class="cta link" href="{base}/">Registration available soon</a></Button>
 
 <style>
   i {
