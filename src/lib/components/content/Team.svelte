@@ -26,6 +26,10 @@
       <img src="{assets}/team/philipp.png" alt="Philipp Kolbe" />
       <div class="team-member-name">Philipp Kolbe</div>
     </div>
+    <div class="team-member">
+      <img src="{assets}/team/tobias.jpg" alt="Tobias Jongen" />
+      <div class="team-member-name">Tobias Jongen</div>
+    </div>
   </div>
 
   <p class="email-text">
