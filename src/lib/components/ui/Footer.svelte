@@ -8,7 +8,7 @@
   <p>&copy; 2025 HPI Pokerbot Competition. All rights reserved.</p>
   <div class="flex justify-center space-x-4 mt-2">
     <a class="text-secondary-foreground" href="https://hpi.de">HPI</a>
-    <a class="text-secondary-foreground" href="{base}/privacy-policy">Privacy Policy</a>
+    <!-- <a class="text-secondary-foreground" href="{base}/privacy-policy">Privacy Policy</a> -->
     <a class="text-secondary-foreground" href="{base}/imprint">Imprint</a>
     <span class="text-secondary-foreground"><Email text="Contact" /></span>
     <a class="text-secondary-foreground" href="{base}/code-of-conduct">Code of Conduct</a>

@@ -58,7 +58,6 @@
   }
 
   .team-section .team-members {
-    padding: 2rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -72,7 +71,8 @@
   .team-section .team-member img {
     aspect-ratio: 1;
     border-radius: 50%;
-    width: 10rem;
+    width: 150px;
+    height: auto;
     object-fit: cover;
   }
 
