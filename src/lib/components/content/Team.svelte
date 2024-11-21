@@ -70,9 +70,9 @@
   }
 
   .team-section .team-member img {
+    aspect-ratio: 1;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 10rem;
     object-fit: cover;
   }
 
