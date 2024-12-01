@@ -27,7 +27,7 @@
       <div class="flex items-center">
         <Sheet bind:open={sheetOpen}>
           <SheetTrigger><Menu class="h-10 lg:hidden w-10" /></SheetTrigger>
-          <SheetContent side="left" class="w-[500px] sm:w-[600px]">
+          <SheetContent side="left" class="w-[100%] sm:w-[100%]">
             <nav class="flex flex-col gap-8 mt-10 items-center">
               <NavRoutes {routes} on:closeSheet={handleCloseSheet} />
             </nav>

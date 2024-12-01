@@ -3,7 +3,7 @@
   import { Button } from "$lib/components/ui/button";
 </script>
 
-<Button size="lg"><i class="fas fa-user" /><a class="cta link" href="{base}/">Registration available soon</a></Button>
+<Button size="lg"><i class="fas fa-user" /><a class="cta link" href="https://hpi.de/en/open-campus/registration/hpi-showdown-the-poker-bot/">Register</a></Button>
 
 <style>
   i {

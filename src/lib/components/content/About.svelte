@@ -87,7 +87,7 @@
       <div>
         <h3>Can I work in a team?</h3>
         <p>
-          You can work in teams of 2 or work alone. We can help you find a teammate if you contact us.
+          You will work in teams of 2. Solo participants can team up on the event day. 
         </p>
       </div>
     </div>

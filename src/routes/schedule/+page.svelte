@@ -16,9 +16,8 @@
   
     <h3>Competitions</h3>
     <p>
-      There will be fun competitions with prizes throughout the event to test your bots.
-      We are planning on hosting a speed competition on Sunday, the 12th of January. 
-      If you do not have the time to participate for the entire week, this is a great opportunity to still participate in a competition.
+      There will be fun competitions with prizes throughout the event to test your bots 
+      and a final competition on the Friday where your bots will play against each other. 
     </p>
   
     <h3>Asynchronous Event</h3>
