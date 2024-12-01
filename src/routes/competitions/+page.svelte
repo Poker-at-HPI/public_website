@@ -9,7 +9,7 @@
       <h1>Competitions</h1>
     </div>  
     <p>
-      The HPI Poker Bot Event consists of several competitions. Here you can find an overview over the results of those competitions.
+      The Poker Bot Event consists of several competitions. Here you can find an overview over the results of those competitions.
     </p>
     <h2>Competitions 2025</h2>
     <p>

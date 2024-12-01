@@ -10,7 +10,7 @@
 
 <Container>
   <section id="home" class="home-section">
-    <h1 class="font-bold text-4xl">Welcome to the HPI Poker Bot Competition!</h1>
+    <h1 class="font-bold text-4xl">Welcome to the Poker Bot Competition of HPI Showdown!</h1>
     <p class="mt-4">Join us for an exciting hackathon-style event with competitions and prizes!</p>
     <div class="content-wrapper">
       <div class="flex-1">
