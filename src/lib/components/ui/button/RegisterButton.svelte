@@ -3,7 +3,7 @@
   import { Button } from "$lib/components/ui/button";
 </script>
 
-<Button size="lg"><i class="fas fa-user" /><a class="cta link" href="https://hpi.de/en/open-campus/registration/hpi-showdown-the-poker-bot/">Register</a></Button>
+<a class="cta link" href="https://hpi.de/en/open-campus/registration/hpi-showdown-the-poker-bot/"><Button size="lg"><i class="fas fa-user" /><span>Register</span></Button></a>
 
 <style>
   i {
@@ -12,7 +12,7 @@
     color: hsl(var(--accent));
   }
 
-  .link {
+  span {
     font-size: 1.2rem;
   }
 </style>
