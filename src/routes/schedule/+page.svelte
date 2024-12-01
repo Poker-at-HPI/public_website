@@ -16,8 +16,8 @@
   
     <h3>Competitions</h3>
     <p>
-      There will be fun competitions with prizes throughout the event to test your bots 
-      and a final competition on the Friday where your bots will play against each other. 
+      There will be fun competitions with prizes throughout the event to test your bots, 
+      with the final competition on Friday where your bots will compete against each other.
     </p>
   
     <h3>Asynchronous Event</h3>
