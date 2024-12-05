@@ -8,7 +8,7 @@
 
   const routes = [
     { label: "home", url: `${base}/` },
-    { label: "about", url: `${base}/about` },
+    // { label: "about", url: `${base}/about` },
     { label: "schedule", url: `${base}/schedule` },
     { label: "sponsors", url: `${base}/sponsors` },
     { label: "team", url: `${base}/team` },

@@ -27,6 +27,10 @@
       <div class="team-member-name">Philipp Kolbe</div>
     </div>
     <div class="team-member">
+      <img src="{assets}/team/pit.jpg" alt="Pit Buttchereit" />
+      <div class="team-member-name">Pit Buttchereit</div>
+    </div>
+    <div class="team-member">
       <img src="{assets}/team/tobias.jpg" alt="Tobias Jongen" />
       <div class="team-member-name">Tobias Jongen</div>
     </div>
@@ -49,7 +53,7 @@
   }
 
   .team-members-title-container {
-    margin-top: 2rem;
+    margin-top: 7rem;
   }
 
   .team-members-title-container h2 {
@@ -61,7 +65,9 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
+    flex-shrink: 0;
   }
 
   .team-section .team-member {
@@ -71,8 +77,10 @@
   .team-section .team-member img {
     aspect-ratio: 1;
     border-radius: 50%;
+    /* width: calc(10vw); */
     width: 150px;
     height: auto;
+    flex-shrink: 1;
     object-fit: cover;
   }
 

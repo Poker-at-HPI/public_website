@@ -1,11 +1,12 @@
 <script>
+    import { base } from "$app/paths";
     import RegisterButton from "../ui/button/RegisterButton.svelte";
     import Email from "../ui/email/email.svelte";
 
 </script>
 
 <section class="about-section">
-  <h2>What to expect</h2>
+  <h2>What to expect?</h2>
   <p>A hackathon-style competition in which you get to showcase your coding and strategy skills hosted at HPI in Potsdam!</p>
   <p>Open to everyone starting on January 10th and ending on January 17th 2025. Prior poker knowledge unnecessary. </p>
   <p>Simply implement your poker bot as a team, and win BIG with exclusive prizes and the ultimate bragging rights!</p>
@@ -27,7 +28,8 @@
       <div>
         <h3>When is the event?</h3>
         <p>
-          The event takes place from January 10th until January 17th 2025. A more specific schedule coming soon...
+          The event takes place from January 10th until January 17th 2025. A more specific schedule can be found 
+          <a href="{base}/schedule">here</a>.
         </p>
       </div>
     </div>
@@ -170,6 +172,10 @@
 
   .below-faq p.no-margin {
     margin-bottom: 0;
+  }
+
+  .faq-item a {
+    font-weight: bold;
   }
 
 </style>

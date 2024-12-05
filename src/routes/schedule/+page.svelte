@@ -10,10 +10,12 @@
     </div>
 
     <p>
-      The HPI Poker Bot Competition will start with a kickoff event on Friday, the 10th of January.
-      The final competition will be held on Friday, the 17th of January.
+      The Poker Bot Competition will start with a kickoff event on Friday, the 10th of January. 
+      The check-in will start at 2 pm. 
+      That day you will have time to work on your bots until 11 pm.
+      The award ceremony will begin at 3 pm on Friday, the 17th of January.
     </p>
-  
+
     <h3>Competitions</h3>
     <p>
       There will be fun competitions with prizes throughout the event to test your bots, 

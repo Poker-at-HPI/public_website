@@ -13,7 +13,7 @@
       Almost a year ago we started with the organization and development of a Poker Bot Competition as a side project.
     </p>
     <p>
-      Inspired by the <a href="https://pokerbots.org/">MIT Pokerbots</a> event we wanted to create a similar competition at HPI...
+      Inspired by the <a href="https://pokerbots.org/">MIT Pokerbots</a> event we wanted to create a similar competition at HPI.
       This year we are proud to present the first edition of HPI Showdown's Poker Bot Competition!
     </p>
   </div>
