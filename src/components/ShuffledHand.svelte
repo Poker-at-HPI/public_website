@@ -6,8 +6,13 @@
 
   let key = 0;
   let chosenCards: string[] = [];
+
+  let flippedCards = 0;
+  let flipBackCards = false;
   const shuffleCards = () => {
     chosenCards = [];
+    flippedCards = 0;
+    flipBackCards = false;
     const colors: string[] = ["CLUB", "DIAMOND", "HEART", "SPADE"];
     const numbers: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11-JACK", "12-QUEEN", "13-KING"];
 
@@ -20,13 +25,23 @@
       } while (chosenCards.includes(`${randomColor}-${randomNumber}.svg`) && j < 100);
       chosenCards.push(`${randomColor}-${randomNumber}.svg`);
     }
-
     key +=1;
   };
 
   onMount(() => {
     shuffleCards();
   });
+
+  const handleCardUpdate = (event: any) => {
+    const message = event.detail;
+    if (message < 0) {
+      shuffleCards();
+    } else if (message < 5) {
+      flippedCards = event.detail;
+    } else if (flippedCards === 4 && message === 5){
+      flipBackCards = true;
+    }
+  }
 
 </script>
 
@@ -35,7 +50,8 @@
   <!-- <button on:click={shuffleCards}>new hand</button> -->
   <div class='cards-container'>
     {#each chosenCards as card, idx}
-      <GameCard cardName={card} cardKey={idx}/> 
+      <GameCard cardName={card} cardKey={idx} initialDelay={1250} on:update={handleCardUpdate} 
+        flipTrigger={flipBackCards}/> 
     {/each}
   </div>
 </Container>
