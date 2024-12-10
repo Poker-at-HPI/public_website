@@ -10,28 +10,35 @@
     </div>
 
     <p>
-      The Poker Bot Competition will start with a kickoff event on Friday, the 10th of January. 
-      The check-in will start at 2 pm. 
-      That day you will have time to work on your bots until 11 pm.
-      The award ceremony will begin at 3 pm on Friday, the 17th of January.
+      The Poker Bot Competition will start with a kickoff event on Friday, 
+      January 10th, and wrap up with a closing event on Friday, January 17th. 
+      In between, you'll have plenty of time to hack on your own schedule.
     </p>
 
-    <h3>Competitions</h3>
+    <h3>
+      Kickoff, on-site at HPI Campus 2, January 10th.
+    </h3>
     <p>
-      There will be fun competitions with prizes throughout the event to test your bots, 
-      with the final competition on Friday where your bots will compete against each other.
+      The check in will start at 2pm.
+      You will recieve an introduction to the poker variant and the bot framework.
+      There will be a warm up where you can test out your strategies in an in person poker round.
+      Afterwards there will be more information on the competition and prices, and some drinks and pizza.
+      The free hacking time is planned to start at 6pm, after which you are more than welcome to stay till the HPI closes (11 pm).
     </p>
-  
-    <h3>Asynchronous Event</h3>
+    <h3>
+      Asynchronous Hacking, January 11th - 16th
+    </h3>
     <p>
-      During the rest of the time of the event, you will have lots of time to work on your poker bots.
-      We will try and provide you with rooms to work in.
-      We understand that lectures might already start again and we will make sure to consider that. 
-      You can simply work on your poker bots whenever you find the time!
+      During the rest of the time of the event, you can work on your poker bots, whenever you find the time. 
+      There will be side competitions giving you a chance to collect even more prizes. 
+      We will stay in contact through discord, and publish a pointer or two.
     </p>
-  
+    <h3>
+      Closing, on-site at HPI Campus 1, January 17th starting at 3pm
+    </h3>
     <p>
-      More specifics on the schedule will be published soon!
+      Join us at the closing event for the BIG Showdown: We will hold the final tournament 
+      followed by award ceremonies and raffle for everyone! The event will conclude with open end drinks and pizza.
     </p>
   </section>
 </Container>
@@ -72,7 +79,7 @@
   }
 
   .schedule-section h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
   }
 
