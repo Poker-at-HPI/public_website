@@ -10,6 +10,7 @@
   <p>A hackathon-style competition in which you get to showcase your coding and strategy skills hosted at HPI in Potsdam!</p>
   <p>Open to everyone starting on January 10th and ending on January 17th 2025. Prior poker knowledge unnecessary. </p>
   <p>Simply implement your poker bot as a team, and win BIG with exclusive prizes and the ultimate bragging rights!</p>
+  <p>This competition is inspired by <a href="https://pokerbots.org/">MIT Pokerbots</a>.</p>
 
   <h2>FAQ</h2>
   <div class="faq-grid">
@@ -162,6 +163,10 @@
 
   .about-section p {
     font-size: 1.2rem;
+  }
+
+  .about-section a {
+    font-weight: bold;
   }
 
   .below-faq p {

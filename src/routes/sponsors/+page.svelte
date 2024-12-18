@@ -4,10 +4,11 @@
     import { onMount } from "svelte";
 
   
-  let isDarkMode = true;
+  let isWhiteMode = false;
   onMount(() => {
+    isWhiteMode = localStorage.getItem('mode-watcher-mode') === 'light';
     const handleClick = () => {
-      isDarkMode = localStorage.getItem('mode-watcher-mode') === 'dark';
+      isWhiteMode = localStorage.getItem('mode-watcher-mode') === 'light';
     }
     document.addEventListener('click', handleClick);
     return () => {
@@ -15,8 +16,8 @@
     }
   });
 
-  $: quantcoSrc = `${assets}/sponsors/quantco_${isDarkMode ? 'white' : 'black'}.svg`;
-  $: meisterSystemsSrc = `${assets}/sponsors/ms_logo_${isDarkMode ? 'white.png' : 'black.jpg'}`;
+  $: quantcoSrc = `${assets}/sponsors/quantco_${isWhiteMode ? 'black' : 'white'}.svg`;
+  $: meisterSystemsSrc = `${assets}/sponsors/ms_logo_${isWhiteMode ? 'black.jpg' : 'white.png'}`;
   $: googleSrc = `${assets}/sponsors/Google__G__logo.svg`;
 </script>
 
@@ -103,8 +104,8 @@
   }
 
   .main-sponsor-container a {
-    width: 20%;
-    height: auto;
+    width: auto;
+    height: 20%;
   }
 
   .sponsor-container {
@@ -120,8 +121,9 @@
   }
 
   #meister-systems-image {
-    width: 65vh;
-    height: auto;
+    width: auto;
+    height: 10vh;
+    margin-left: 2rem;
   }
 
 </style>
