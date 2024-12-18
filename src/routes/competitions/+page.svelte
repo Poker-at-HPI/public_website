@@ -9,7 +9,7 @@
       <h1>Competitions</h1>
     </div>  
     <p>
-      The Poker Bot Event consists of several competitions. Here you can find an overview over the results of those competitions.
+      This event consists of several small and large competitions. Here you can find an overview over those.
     </p>
     <h2>Competitions 2025</h2>
     <h3>Final Tournament</h3>
