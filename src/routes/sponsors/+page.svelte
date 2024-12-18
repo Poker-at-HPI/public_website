@@ -1,20 +1,50 @@
 <script lang="ts">
+  import { assets } from "$app/paths";
   import { Container } from "$lib";
+    import { onMount } from "svelte";
+
+  
+  let isDarkMode = true;
+  onMount(() => {
+    const handleClick = () => {
+      isDarkMode = localStorage.getItem('mode-watcher-mode') === 'dark';
+    }
+    document.addEventListener('click', handleClick);
+    return () => {
+      document.removeEventListener('click', handleClick)
+    }
+  });
+
+  $: quantcoSrc = `${assets}/sponsors/quantco_${isDarkMode ? 'white' : 'black'}.svg`;
+  $: meisterSystemsSrc = `${assets}/sponsors/ms_logo_${isDarkMode ? 'white.png' : 'black.jpg'}`;
+  $: googleSrc = `${assets}/sponsors/Google__G__logo.svg`;
 </script>
 
 <Container>
   <section class="sponsors-section">
     <div class="title-container">
-      <i class="fas fa-award"></i>
+      <i class="fas fa-star"></i>
       <h1>Sponsors</h1>
     </div>
-    <p>
-      The sponsors of the event will be published soon!
-    </p>
-    <!-- TODO: Find and write sponsors here -->
-    <p>
-      We are still looking for sponsors to support HPI Showdown's Poker Bot Competition. If you are interested in sponsoring the event, please contact us!
-    </p>
+    <h2>
+      We are proud to present QuantCo as the main sponsor of HPI Showdown:
+    </h2>
+    <div class="main-sponsor-container">
+      <a href="https://www.quantco.com/">
+        <img src={quantcoSrc} alt="Quantco" />
+      </a>
+    </div>
+    <h3>
+      Further support of the event is provided by:
+    </h3>
+    <div class="sponsor-container">
+      <a  href="https://www.google.com/">
+        <img id="google-image" src="{googleSrc}" alt="Google" />
+      </a>
+      <a href="https://meistersystems.de/en">
+        <img id="meister-systems-image" src="{meisterSystemsSrc}" alt="MeisterSystems" />
+      </a>
+    </div>
   </section>
 </Container>
 
@@ -48,11 +78,52 @@
     font-size: 2rem;
   }
 
+  .sponsors-section h3 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  .sponsors-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
   .sponsors-section p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
+
+  .main-sponsor-container {
+    margin: 2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-sponsor-container a {
+    width: 20%;
+    height: auto;
+  }
+
+  .sponsor-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  #google-image {
+    width: auto;
+    height: 20vh;
+  }
+
+  #meister-systems-image {
+    width: 65vh;
+    height: auto;
+  }
+
 </style>
 
 <!-- Add Font Awesome -->

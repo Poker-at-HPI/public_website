@@ -15,6 +15,15 @@
     <p>
       More information will be published soon!
     </p>
+    <div class="title-container">
+      <i class="fas fa-award"></i>
+      <h1>Prizes</h1>
+    </div> 
+    <p>
+      During competition you will get the change to win some amazing prizes. 
+      The top performing teams in the final Showdown will be awarded price money.
+      Other prices include custom HPI card sets, poker & card game accessories and more.
+    </p>
     <!-- TODO: Specify which competitions exist (Speed competition, Final Competition). Make Cards for each and link to somewhere-->
   </section>
 </Container>

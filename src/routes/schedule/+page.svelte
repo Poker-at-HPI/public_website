@@ -16,10 +16,10 @@
     </p>
 
     <h3>
-      Kickoff, on-site at HPI Campus 2, January 10th.
+      Kickoff, on-site at HPI Campus 2, January 10th, starting at 2pm
     </h3>
     <p>
-      The check in will start at 2pm.
+      At first you will have some time for the check-in.
       You will recieve an introduction to the poker variant and the bot framework.
       There will be a warm up where you can test out your strategies in an in person poker round.
       Afterwards there will be more information on the competition and prices, and some drinks and pizza.
