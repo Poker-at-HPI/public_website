@@ -15,11 +15,11 @@
   <h2>FAQ</h2>
   <div class="faq-grid">
     <div class="faq-item">
-      <i class="fas fa-brain"></i>
+      <i class="fas fa-user"></i>
       <div>
-        <h3>Which skills do I need?</h3>
+        <h3>How can I participate?</h3>
         <p>
-          No poker knowledge is required! At least one person in your team should have basic programming skills. Our team will give you an introduction into poker and bot programming.
+          Participation is free! You must be a student to participate. You can participate online or in person.
         </p>
       </div>
     </div>
@@ -36,41 +36,41 @@
     </div>
 
     <div class="faq-item">
-      <i class="fas fa-list-alt"></i>
-      <div>
-        <h3>How will the event be structured?</h3>
-        <p>
-          We are planning a kickoff and a final competition. Throughout the week there might be a few events but you will have free time to implement your bots.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <i class="fas fa-user"></i>
-      <div>
-        <h3>How can I participate?</h3>
-        <p>
-          Participation is free! There are no participation requirements. You can participate online or in person.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <i class="fas fa-trophy"></i>
-      <div>
-        <h3>What can I win?</h3>
-        <p>
-          We will host competitions where you can let your poker bot play against others in a tournament. Everyone will have the chance to win cool prizes!
-        </p>
-      </div>
-    </div>
-
-    <div class="faq-item">
       <i class="fas fa-question-circle"></i>
       <div>
         <h3>Which variant of poker will be played?</h3>
         <p>
           This will be published at the event to allow a fair competition.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <i class="fas fa-brain"></i>
+      <div>
+        <h3>Which skills do I need?</h3>
+        <p>
+          No poker knowledge is required! At least one person in your team should have basic programming skills. Our team will give you an introduction into poker and bot programming.
+        </p>
+      </div>
+    </div>
+  
+    <div class="faq-item">
+      <i class="fas fa-trophy"></i>
+      <div>
+        <h3>What can I win?</h3>
+        <p>
+          We will host competitions where you can let your poker bot play against others in a tournament. Everyone will have the chance to win cool prizes in a raffle! The winners can win prize money. Also see <a href="{base}/competitions">Competitions</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <i class="fas fa-list-alt"></i>
+      <div>
+        <h3>How will the event be structured?</h3>
+        <p>
+          We are planning a kickoff and a final competition. Throughout the week there might be a few events but you will have free time to implement your bots.
         </p>
       </div>
     </div>
