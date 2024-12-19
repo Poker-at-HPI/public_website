@@ -12,6 +12,7 @@
     <a class="text-secondary-foreground" href="{base}/imprint">Imprint</a>
     <span class="text-secondary-foreground"><Email text="Contact" /></span>
     <a class="text-secondary-foreground" href="{base}/code-of-conduct">Code of Conduct</a>
+    <a class="text-secondary-foreground" href="{base}/credits">Credits</a>
 
     <!-- TODO: Link Github -->
     <!-- TODO: Link Documentation -->

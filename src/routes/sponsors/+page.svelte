@@ -28,16 +28,16 @@
       <h1>Sponsors</h1>
     </div>
     <h2>
-      We are proud to present QuantCo as the main sponsor of HPI Showdown:
+      We are proud to present QuantCo as the main sponsor of HPI Showdown 2025:
     </h2>
     <div class="main-sponsor-container">
       <a href="https://www.quantco.com/">
         <img src={quantcoSrc} alt="Quantco" />
       </a>
     </div>
-    <h3>
+    <h2>
       Further support of the event is provided by:
-    </h3>
+    </h2>
     <div class="sponsor-container">
       <a  href="https://www.google.com/">
         <img id="google-image" src="{googleSrc}" alt="Google" />
@@ -96,34 +96,50 @@
   }
 
   .main-sponsor-container {
-    margin: 2rem;
     justify-content: center;
     display: flex;
     align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
   }
 
   .main-sponsor-container a {
+    margin: 2rem;
+    height: 12rem;
     width: auto;
-    height: 20%;
+  }
+
+  .main-sponsor-container img {
+    height: 100%;
+    width: 100%;
   }
 
   .sponsor-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .sponsor-container a {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sponsor-container img {
+    height: 100%;
+    width: 100%;
   }
 
   #google-image {
-    width: auto;
-    height: 20vh;
+    height: 8rem;
+    width: 8rem;
   }
 
   #meister-systems-image {
-    width: auto;
-    height: 10vh;
-    margin-left: 2rem;
+    height: auto;
+    width: 35rem;
   }
 
 </style>
