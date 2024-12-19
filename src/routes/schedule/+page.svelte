@@ -34,7 +34,7 @@
       We will stay in contact through discord, and publish a pointer or two.
     </p>
     <h3>
-      Closing, on-site at HPI Campus 1, January 17th starting at 3pm
+      Closing, on-site at HPI Campus 1, January 17th, starting at 3pm
     </h3>
     <p>
       Join us at the closing event for the BIG Showdown: We will hold the final tournament 
