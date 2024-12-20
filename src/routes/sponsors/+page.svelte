@@ -2,25 +2,14 @@
   import { assets } from "$app/paths";
   import { Container } from "$lib";
   import { onMount } from "svelte";
-
   
   let isWhiteMode = false;
-  // const setLogoPaths = () => {
-  //   quantcoSrc = `${assets}/sponsors/quantco_${isWhiteMode ? 'black' : 'white'}.svg`;
-  //   meisterSystemsSrc = `${assets}/sponsors/ms_logo_${isWhiteMode ? 'black.jpg' : 'white.png'}`;
-  //   googleSrc = `${assets}/sponsors/Google__G__logo.svg`;
-  // }
   
   onMount(() => {
-    isWhiteMode = localStorage.getItem('mode-watcher-mode') === 'light';
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      isWhiteMode = true;
-      localStorage.setItem('mode-watcher-mode', 'light');
-    }
-    // setLogoPaths();
+    console.log(window.getComputedStyle(document.body).getPropertyValue('background-color'));
+    isWhiteMode = window.getComputedStyle(document.body).getPropertyValue('background-color') !== 'rgb(2, 8, 23)';
     const handleClick = () => {
-      isWhiteMode = localStorage.getItem('mode-watcher-mode') === 'light';
-      // setLogoPaths();
+      isWhiteMode = window.getComputedStyle(document.body).getPropertyValue('background-color') !== 'rgb(2, 8, 23)';
     }
     document.addEventListener('click', handleClick);
     return () => {
