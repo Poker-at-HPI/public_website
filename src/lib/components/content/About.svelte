@@ -80,7 +80,7 @@
       <div>
         <h3>In which programming language will I work?</h3>
         <p>
-          You can implement your poker bot in Python, C++ or Java in our predefined poker bot framework.
+          You can implement your poker bot in Python or C++ in our predefined poker bot framework.
         </p>
       </div>
     </div>

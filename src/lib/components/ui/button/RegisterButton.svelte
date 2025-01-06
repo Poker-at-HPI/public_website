@@ -3,7 +3,7 @@
   import { Button } from "$lib/components/ui/button";
 </script>
 
-<a class="cta link" href="https://hpi.de/en/open-campus/registration/hpi-showdown-the-poker-bot/"><Button size="lg"><i class="fas fa-user" /><span>Register</span></Button></a>
+<Button size="lg" style="background-color: grey; color: white; border: none;"><i class="fas fa-user" /><span>Registration is closed</span></Button>
 
 <style>
   i {
@@ -14,6 +14,7 @@
 
   span {
     font-size: 1.2rem;
+    color: lightgrey;
   }
 </style>
 

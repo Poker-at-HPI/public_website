@@ -17,10 +17,10 @@
     }
   });
 
+  $: googleSrc = `${assets}/sponsors/Google__G__logo.svg`;
   $: quantcoSrc = `${assets}/sponsors/quantco_${isWhiteMode ? 'black' : 'white'}.svg`;
   $: meisterSystemsSrc = `${assets}/sponsors/ms_logo_${isWhiteMode ? 'black.jpg' : 'white.png'}`;
-  $: googleSrc = `${assets}/sponsors/Google__G__logo.svg`;
-
+  $: engineSrc = `${assets}/sponsors/engine_${isWhiteMode ? 'black' : 'white'}.svg`;
 </script>
 
 <Container>
@@ -46,6 +46,9 @@
       </a>
       <a href="https://meistersystems.de/en">
         <img id="meister-systems-image" src="{meisterSystemsSrc}" alt="MeisterSystems" />
+      </a>
+      <a href="https://www.engine.hpi.de/">
+        <img id="engine-image" src="{engineSrc}" alt="HPI Engine" />
       </a>
     </div>
   </section>
@@ -142,6 +145,11 @@
   #meister-systems-image {
     height: auto;
     width: 35rem;
+  }
+
+  #engine-image {
+    height: auto;
+    width: 25rem;
   }
 
 </style>
