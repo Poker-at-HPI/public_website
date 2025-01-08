@@ -33,21 +33,21 @@
       We are proud to present QuantCo as the main sponsor of HPI Showdown 2025:
     </h2>
     <div class="main-sponsor-container">
-      <a href="https://www.quantco.com/">
-        <img src={quantcoSrc} alt="Quantco" />
+      <a href="https://www.quantco.com/" title="QuantCo">
+        <img src={quantcoSrc} alt="QuantCo" />
       </a>
     </div>
     <h2>
       Further support of the event is provided by:
     </h2>
     <div class="sponsor-container">
-      <a  href="https://www.google.com/">
+      <a href="https://www.google.com/" title="Google">
         <img id="google-image" src="{googleSrc}" alt="Google" />
       </a>
-      <a href="https://meistersystems.de/en">
+      <a href="https://meistersystems.de/en" title="MeisterSystems">
         <img id="meister-systems-image" src="{meisterSystemsSrc}" alt="MeisterSystems" />
       </a>
-      <a href="https://www.engine.hpi.de/">
+      <a href="https://www.engine.hpi.de/" title="HPI Engine">
         <img id="engine-image" src="{engineSrc}" alt="HPI Engine" />
       </a>
     </div>
@@ -138,18 +138,19 @@
   }
 
   #google-image {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
   }
 
   #meister-systems-image {
     height: auto;
-    width: 35rem;
+    width: 30rem;
   }
 
   #engine-image {
     height: auto;
-    width: 25rem;
+    width: 16rem;
+    padding-top: 1.5rem;
   }
 
 </style>
